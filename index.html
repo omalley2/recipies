@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Seasonal Recipe Planner — 2 servings</title>
+<style>
+  :root{
+    --accent:#1f6feb;
+    --muted:#666;
+    --page-width:900px;
+    --font-sans: "Segoe UI", Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  body{
+    font-family: var(--font-sans);
+    color:#111;
+    margin:24px;
+    background:#fff;
+  }
+  .container{
+    max-width:var(--page-width);
+    margin:0 auto;
+  }
+  header{
+    text-align:center;
+    margin-bottom:20px;
+  }
+  header h1{margin:0;font-size:28px;}
+  header p{margin:6px 0 0;color:var(--muted);}
+
+  nav{margin:18px 0;padding:8px 12px;border-left:4px solid var(--accent);background:#f8fbff}
+  nav a{display:inline-block;margin-right:12px;color:var(--accent);text-decoration:none;font-weight:600}
+
+  section.season{page-break-inside:avoid;margin-bottom:26px}
+  h2{font-size:20px;margin:18px 0 8px;border-bottom:1px solid #e6e6e6;padding-bottom:6px}
+  h3.recipe{font-size:18px;margin:8px 0}
+  .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+  .meta strong{color:#222}
+  .row{display:flex;gap:18px;flex-wrap:wrap}
+  .col{flex:1 1 420px;min-width:250px}
+  .card{border:1px solid #eee;padding:12px;border-radius:6px;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,0.02)}
+  ul{margin:8px 0 12px 20px}
+  ol{margin:8px 0 12px 20px}
+  .flag{display:inline-block;padding:4px 8px;border-radius:14px;background:#eef9f3;color:#0a6b2f;font-weight:600;font-size:12px;margin-right:8px}
+  .source{font-size:13px;color:var(--muted);margin-top:6px}
+  .ing-list{margin:6px 0 12px 0;padding-left:12px}
+  .instructions{margin-top:6px}
+  .img-wrap{margin-top:12px;text-align:center}
+  .img-wrap img{max-width:100%;height:auto;border-radius:6px;border:1px solid #ddd}
+  footer{margin-top:32px;padding-top:12px;border-top:1px solid #eee;color:var(--muted);font-size:13px}
+  @media print{
+    nav{display:none}
+    body{margin:8mm}
+    header h1{font-size:22px}
+    .card{border:none;box-shadow:none}
+    .img-wrap img{page-break-inside:avoid;max-height:300px}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Seasonal Recipe Planner — Scaled for 2 servings</h1>
+    <p>Seasons use San Francisco approximate months. Each recipe includes ingredients, step-by-step instructions, farmer’s‑market flag, source link, and an image at the bottom.</p>
+  </header>
+
+  <nav>
+    <a href="#spring">Spring (Mar–May)</a>
+    <a href="#summer">Summer (Jun–Aug)</a>
+    <a href="#fall">Fall (Sep–Nov)</a>
+    <a href="#winter">Winter (Dec–Feb)</a>
+  </nav>
+
+  <!-- SPRING -->
+  <section id="spring" class="season">
+    <h2>Spring (March–May — SF)</h2>
+
+    <article class="card">
+      <h3 class="recipe">Spring Vegetable Risotto</h3>
+      <div class="meta">
+        <span class="flag">Farmer’s Market Friendly</span>
+        <span>Season: Spring (Mar–May)</span> • <span>Serves: 2</span> • <span class="source">Inspired by: Serious Eats / chef notes</span>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>¾ cup arborio (risotto) rice</li>
+            <li>½ lb asparagus, trimmed, cut 1" segments (reserve tips)</li>
+            <li>½ cup sugar snap peas, halved</li>
+            <li>½ cup shelled fava beans or fresh peas</li>
+            <li>2 small baby zucchini, halved and sliced</li>
+            <li>1–2 tbsp dried morel mushrooms (optional — omit for mushroom-free)</li>
+            <li>1 cup dry white wine</li>
+            <li>~3 cups warm vegetable stock</li>
+            <li>3 tbsp extra-virgin olive oil, 2 tbsp unsalted butter</li>
+            <li>2 cloves garlic, grated; 1 small shallot, minced</li>
+            <li>1 tbsp lemon juice + 1 tsp zest; 2 tbsp chopped parsley</li>
+            <li>Salt and freshly ground black pepper</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Bring a pot of salted water to a boil. Blanch asparagus (except tips), snap peas, favas and zucchini 30–60 seconds until bright; shock in ice water and drain. Reserve 1 cup blanching water.</li>
+            <li>If using dried morels, rehydrate them in ¾ cup hot reserved blanching water for 15–20 minutes; strain and reserve that liquid and the mushrooms.</li>
+            <li>In a wide, heavy pot warm 1½ tbsp olive oil over medium heat. Add shallot and garlic and cook 2–3 minutes until translucent. Add rice and stir to coat, toasting 1–2 minutes.</li>
+            <li>Pour in wine and stir until nearly absorbed. Begin adding warm stock (and mushroom liquid if used) a ladleful at a time, stirring frequently and allowing absorption before adding more. Continue 18–22 minutes until rice is creamy and al dente.</li>
+            <li>While rice cooks, sauté rehydrated morels in 1 tsp olive oil 2–3 minutes (skip if omitted). Stir blanched vegetables into the rice near the end of cooking; add asparagus tips last to keep tender.</li>
+            <li>Finish by stirring in butter, lemon juice and zest, parsley; season with salt and pepper. Serve immediately.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap">
+        <img src="https://coleycooks.com/wp-content/uploads/2022/03/spring-vegetable-risotto-with-asparagus-peas-radishes-leeks-2.jpg" alt="Spring Vegetable Risotto">
+      </div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Pasta with Garlic & Lots of Veggies</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Spring (Mar–May) • Serves: 2 • Inspired by: uploaded pasta example</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>8 oz short pasta (twist/tubular)</li>
+            <li>8 oz asparagus, trimmed and cut</li>
+            <li>1 small zucchini, sliced; 1 small summer squash, sliced</li>
+            <li>½ cup shelled fava beans or 1 cup frozen peas</li>
+            <li>1 cup cherry tomatoes, halved</li>
+            <li>10–12 cloves garlic, thinly sliced or grated</li>
+            <li>2 tbsp unsalted butter + 1 tbsp olive oil</li>
+            <li>¼ cup chopped parsley; 2 tsp lemon zest; 1 oz grated Parmesan</li>
+            <li>Salt, black pepper, pinch red pepper flakes</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Cook pasta in salted boiling water until al dente. Reserve 1 cup pasta water; drain.</li>
+            <li>In a large skillet, heat olive oil and butter over medium. Add garlic and red pepper flakes; cook 1 minute until fragrant.</li>
+            <li>Add asparagus, zucchini and summer squash; sauté 4–6 minutes until tender-crisp. Add fava beans/peas and tomatoes; cook 1–2 minutes.</li>
+            <li>Add pasta and ¼–½ cup reserved pasta water; toss until sauce coats the pasta. Add lemon zest, parsley and Parmesan, season with salt and pepper, and serve warm.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap">
+        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Pasta-and-Veggies-in-Garlic-Sauce_EXPS_TOHON22_17575_DR_05_20_9b.jpg" alt="Pasta with Garlic and Veggies">
+      </div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Shakshuka with Feta (Flexible: optional lamb merguez)</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Spring (Mar–May) • Serves: 2 • Inspired by: classic shakshuka</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>1 tbsp olive oil</li>
+            <li>1 small onion, diced; 1 red bell pepper, diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 tsp smoked paprika; ½ tsp ground cumin</li>
+            <li>1 can (14 oz) crushed tomatoes or 2 cups fresh cherry tomatoes, halved & lightly crushed</li>
+            <li>3 large eggs; 2 oz crumbled feta</li>
+            <li>2 lamb merguez sausages (optional — brown and slice)</li>
+            <li>2 tbsp chopped parsley or cilantro; salt, pepper, optional chili flakes</li>
+            <li>Bread for serving (sourdough)</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Heat oil in a skillet over medium. Sauté onion and pepper 6–8 minutes until soft. Add garlic and spices and cook 1 minute.</li>
+            <li>Add tomatoes and simmer 8–12 minutes until sauce thickens and flavors concentrate. If using merguez, brown slices separately and add to sauce.</li>
+            <li>Make 3 wells in the sauce; crack eggs into wells. Cover and cook 6–8 minutes for runny yolks or longer for firmer yolks.</li>
+            <li>Sprinkle with feta and herbs; serve with torn sourdough for dipping.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap">
+        <img src="https://cookieandkate.com/wp-content/uploads/2015/02/shakshuka-2-1-700x1050.jpg" alt="Shakshuka with Feta">
+      </div>
+    </article>
+
+  </section>
+
+  <!-- SUMMER -->
+  <section id="summer" class="season">
+    <h2>Summer (June–August — SF)</h2>
+
+    <article class="card">
+      <h3 class="recipe">Summer Corn & Vegetable Chowder</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Summer (Jun–Aug) • Serves: 2 • Inspired by: Blue Apron</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>2 ears corn — kernels removed (reserve cobs)</li>
+            <li>½ lb fingerling potatoes, thinly sliced</li>
+            <li>1 small red onion, thinly sliced</li>
+            <li>2 stalks celery, sliced; 3 cloves garlic, thinly sliced</li>
+            <li>¼ lb radishes, diced; 3 oz spinach</li>
+            <li>1 bunch tarragon or parsley; 2 tbsp butter + 1 tbsp olive oil</li>
+            <li>1 cup low-fat milk (or half-and-half); 1½ cups water or light stock</li>
+            <li>¼–½ tsp Aleppo pepper or smoked paprika; salt & pepper; lemon wedges</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Remove corn kernels with a sharp knife and reserve cobs. Slice potatoes and prep veg.</li>
+            <li>In a pot heat oil, add garlic, onion, celery and potatoes; season and cook 3–5 minutes until onion softens.</li>
+            <li>Add corn kernels, corn cobs, milk and water/stock. Bring to a simmer and cook 5–7 minutes until potatoes are tender.</li>
+            <li>Add radishes and cook 2–4 minutes more. Remove and discard corn cobs.</li>
+            <li>Stir in spinach, butter, lemon juice, and tarragon. Season to taste and finish with Aleppo pepper. Serve hot.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://joanne-eatswellwithothers.com/wp-content/uploads/2014/08/summer-vegetable-corn-chowder-with-chive-ricotta.jpg" alt="Summer Corn Chowder"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Summer Vegetable Paella (Vegetarian)</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Summer (Jun–Aug) • Serves: 2 • Inspired by: Blue Apron paella</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>1 cup Carnaroli or bomba rice (arborio okay)</li>
+            <li>6–8 oz green beans, trimmed & halved</li>
+            <li>1 small summer squash, diced; 4 oz sweet peppers, sliced</li>
+            <li>1 small yellow onion, diced; 2 cloves garlic (paste)</li>
+            <li>2 tbsp tomato paste; 2¼ cups water or vegetable stock</li>
+            <li>Pinch saffron (optional); smoked paprika; dried oregano; salt & pepper</li>
+            <li>2 tbsp mayonnaise (aioli base); 1 tbsp chopped piquante peppers; 2 tbsp sliced roasted almonds</li>
+            <li>Lemon wedges, olive oil</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Heat 1 tbsp oil in a wide pan; sauté onion until translucent, add squash and peppers and cook 4–5 minutes; then turn off heat.</li>
+            <li>Blanch green beans 2–3 minutes in boiling water, then shock in ice water and drain.</li>
+            <li>Return pan to medium, add tomato paste, spice blend and half the garlic paste; cook 1–2 minutes. Add rice and toast 1–2 minutes.</li>
+            <li>Add 2¼ cups water (and saffron if using); bring to a boil then reduce to medium and cook without stirring 18–20 minutes until liquid is absorbed and rice is al dente.</li>
+            <li>Stir in shocked green beans and lemon juice, drizzle with olive oil. Mix aioli (mayo + piquante + lemon + garlic) and serve on the side. Garnish with almonds.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://fussfreeflavours.com/wp-content/uploads/2021/06/easy-vegetable-paella-main-768x1171.jpg" alt="Vegetable Paella"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Greek Pasta Salad</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Summer (Jun–Aug) • Serves: 2 • Inspired by: The Mediterranean Dish</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>8 oz farfalle pasta</li>
+            <li>½ English cucumber, chopped; 1 green bell pepper, chopped</li>
+            <li>10–12 oz cherry tomatoes, halved; 1–2 shallots or ¼ cup red onion</li>
+            <li>1 cup chopped parsley; 2 tbsp capers; ½ cup pitted Kalamata olives</li>
+            <li>⅓ cup crumbled feta</li>
+            <li>Dressing: zest + juice of 1 lemon, 1 tbsp red wine vinegar, 2 cloves garlic, 2 tsp dried oregano, 3 tbsp olive oil, salt & pepper</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Cook pasta to al dente, drain and cool slightly.</li>
+            <li>Whisk dressing: lemon zest & juice, vinegar, garlic, oregano, salt & pepper; slowly whisk in olive oil.</li>
+            <li>Toss pasta with cucumber, pepper, tomatoes, shallot, parsley, capers and olives; fold in feta gently. Chill 30 minutes for best flavor.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://thecozycook.com/wp-content/uploads/2022/05/Greek-Pasta-Salad-1.jpg" alt="Greek Pasta Salad"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Zucchini & Corn Fritters</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Summer (Jun–Aug) • Serves: 2 (makes 6–8 small fritters)</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>1 small zucchini, grated and squeezed</li>
+            <li>½ cup fresh corn kernels</li>
+            <li>1 egg; 3 tbsp all-purpose flour; 2 tbsp grated Parmesan (optional)</li>
+            <li>2 tbsp chopped chives or parsley; 1 tsp baking powder (optional)</li>
+            <li>Neutral oil for frying; Herbed yogurt: ¼ cup plain yogurt + 1 tsp lemon + chopped herbs</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Combine zucchini, corn, egg, flour, Parmesan, herbs, salt and pepper in a bowl; let sit 5 minutes to hydrate.</li>
+            <li>Heat 2 tbsp oil in a skillet over medium. Drop 2–3 tbsp batter per fritter and flatten slightly; cook 2–3 minutes per side until golden brown. Drain on paper towel.</li>
+            <li>Serve warm with herbed yogurt.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://thekittchen.com/wp-content/uploads/2019/09/Zucchini-and-Corn-Fritters-9-768x1152.jpg" alt="Zucchini and Corn Fritters"></div>
+    </article>
+
+  </section>
+
+  <!-- FALL -->
+  <section id="fall" class="season">
+    <h2>Fall (September–November — SF)</h2>
+
+    <article class="card">
+      <h3 class="recipe">Black Bean Soup</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Late Summer → Early Fall (Aug–Oct) • Serves: 2 • Inspired by: uploaded black bean soup</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>2 tbsp olive oil</li>
+            <li>1 medium yellow onion, diced; 3 cloves garlic, minced</li>
+            <li>2 stalks celery, diced; 1 large carrot, diced; 1 bell pepper, diced</li>
+            <li>1 medium sweet potato or Yukon Gold, peeled & cubed</li>
+            <li>2 tsp ground cumin; 1 tsp smoked paprika; ½ tsp dried oregano; ¼ tsp cayenne (optional)</li>
+            <li>2 cans black beans (15 oz each), drained & rinsed (or ~3 cups cooked)</li>
+            <li>4 cups vegetable or chicken broth; 1 bay leaf; juice of 1 lime</li>
+            <li>Optional: 1 cup shredded cooked chicken or crumbled chorizo; toppings: sour cream, avocado, cilantro, shredded cheese</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Heat oil in a large pot over medium. Add onion, garlic, celery, carrot and bell pepper; sauté 6–8 minutes until softened.</li>
+            <li>Stir in cumin, smoked paprika, oregano, cayenne and sweet potato; cook 2 minutes to toast spices.</li>
+            <li>Add beans, broth and bay leaf; bring to a boil then reduce to a simmer, cover and cook 25–30 minutes until potatoes are tender.</li>
+            <li>Remove bay leaf. For a thicker texture, blend 2 cups and stir back in or pulse with an immersion blender. Stir in lime juice and add optional protein if using. Adjust salt and pepper and serve with toppings.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://cookieandkate.com/wp-content/uploads/2017/07/black-bean-soup-1.jpg" alt="Black Bean Soup"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Farro Risotto with Spinach‑Basil Pesto & Sweet Potato</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Fall (Sep–Nov) • Serves: 2 • Inspired by: Blue Apron farro risotto</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>1 cup pearled farro, rinsed</li>
+            <li>1 small sweet potato, peeled & small diced</li>
+            <li>1 small onion, minced; 2 cloves garlic, minced</li>
+            <li>3 oz baby spinach; 1 small bunch basil</li>
+            <li>¼ cup grated Parmesan; 1 tbsp butter; 2½–3 cups warm veg broth</li>
+            <li>2 tbsp olive oil; salt & pepper</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Blanch basil and spinach in boiling water for a few seconds, drain and squeeze out excess water, then finely chop.</li>
+            <li>In a pot heat 1–2 tbsp oil and sauté onion and garlic 4–5 minutes until soft. Add farro and sweet potato and toast 1–2 minutes.</li>
+            <li>Add 1 cup broth and simmer, stirring frequently until absorbed. Continue adding broth in 1‑cup increments over ~25–35 minutes until farro is tender and chewy.</li>
+            <li>Make a quick pesto by combining blanched greens, half the Parmesan and 1–2 tbsp olive oil; stir into farro with butter and remaining Parmesan. Season and serve.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://www.blueapron.com/recipe-images/production/hero/930x620/farro-risotto.jpg" alt="Farro Risotto"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Spinach Stew with Chickpeas</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Fall (Sep–Nov) • Serves: 2 • Inspired by: The Plant Based School</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>2 tbsp olive oil; 1 large onion, chopped; 4 cloves garlic, pressed</li>
+            <li>1 tsp ground cumin; 1 tsp ground coriander</li>
+            <li>2 cans chickpeas (15 oz) drained or ~3 cups cooked chickpeas</li>
+            <li>2 cups vegetable stock; 1 lb fresh spinach (or ½ lb frozen)</li>
+            <li>1 tsp salt; ¼ tsp black pepper; 1 lemon; 2 tbsp toasted pine nuts</li>
+            <li>Rice, pita or naan for serving; yogurt-tahini sauce optional</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Heat oil in a pot over medium and sauté onion until translucent, 5–7 minutes. Add garlic and spices and cook 1 minute.</li>
+            <li>Add chickpeas and stock and simmer 8–10 minutes to combine flavors. Add spinach in batches, letting each addition wilt before adding more.</li>
+            <li>Adjust seasoning and serve over rice or with pita, garnishing with lemon wedges, toasted pine nuts and a drizzle of yogurt-tahini if desired.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://theplantbasedschool.com/wp-content/uploads/2020/12/spinach-stew.jpg" alt="Spinach Stew"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Stuffed Acorn Squash with Wild Rice & Cranberries (Flexible)</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Fall (Sep–Nov) • Serves: 2 • Inspired by: classic fall recipes</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>1 medium acorn squash, halved and seeded</li>
+            <li>1 cup cooked wild rice or wild rice blend</li>
+            <li>¼ cup dried cranberries; 2 tbsp chopped pecans or walnuts</li>
+            <li>1 small shallot, minced; 1 tbsp olive oil; 1 tsp fresh thyme</li>
+            <li>Salt and pepper; optional ½ cup cooked sausage or 1 cup lentils</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Preheat oven to 400°F. Brush squash halves with oil and season with salt and pepper; roast cut-side up 30–35 minutes until tender.</li>
+            <li>Sauté shallot in oil, add cooked rice, cranberries, nuts, thyme and optional protein; season to taste.</li>
+            <li>Fill roasted squash halves with the rice mixture and return to oven 8–10 minutes to warm through. Serve hot.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://www.twopeasandtheirpod.com/wp-content/uploads/2016/10/Stuffed-Acorn-Squash-1.jpg" alt="Stuffed Acorn Squash"></div>
+    </article>
+
+  </section>
+
+  <!-- WINTER -->
+  <section id="winter" class="season">
+    <h2>Winter (December–February — SF)</h2>
+
+    <article class="card">
+      <h3 class="recipe">Avgolemono Soup with Orzo (or Rice)</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Winter → Early Spring (Dec–Mar) • Serves: 2 • Inspired by: uploaded avgolemono</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>2 tbsp olive oil</li>
+            <li>1 medium onion, diced; 2 stalks celery, diced</li>
+            <li>Optional 1 cup diced carrots or Yukon Gold potatoes</li>
+            <li>4 cups chicken or vegetable broth</li>
+            <li>½ cup orzo or ½ cup medium-grain rice (rinsed)</li>
+            <li>3 large eggs, separated; juice of 2 lemons (~¼ cup)</li>
+            <li>2 tbsp chopped fresh dill; salt and pepper</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Heat oil in a pot over medium and sauté onion and celery (and optional veg) until softened, ~5 minutes. Add broth and bring to a gentle boil.</li>
+            <li>Stir in orzo and cook until al dente, about 8–10 minutes (if using rice, follow rice timing and adjust liquid).</li>
+            <li>Whisk egg yolks with lemon juice in a heatproof bowl. Beat egg whites to soft peaks.</li>
+            <li>Temper yolk mixture by slowly whisking in 1 cup hot broth. Remove pot from heat and stir in tempered yolks, then gently fold in whipped whites. Warm on very low 2–3 minutes without boiling. Stir in dill and season to taste.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://www.themediterraneandish.com/wp-content/uploads/2016/01/avgolemono-soup-2.jpg" alt="Avgolemono Soup"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">French Onion Soup in Sourdough Bread Bowl</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Winter (Dec–Feb) • Serves: 2 • Inspired by: Blue Apron</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>2 large yellow onions, thinly sliced (~4 cups)</li>
+            <li>2 tsp olive oil; 2 tbsp red wine vinegar</li>
+            <li>1½ oz vegetable demi-glace or ~2½ cups stock + demi concentrate</li>
+            <li>2½ cups water; 4 oz Gruyère cheese, grated; ¼ cup grated Parmesan</li>
+            <li>2 small sourdough boules (for bowls); salt & pepper</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Preheat oven to 500°F. In a heavy pot heat oil over medium and add sliced onions. Cook low and slow 40–45 minutes, stirring occasionally, until deep golden and caramelized. Add red wine vinegar to deglaze and concentrate flavor.</li>
+            <li>Add demi-glace (or stock + demi concentrate) and water; simmer 4–5 minutes to combine and reduce slightly. Season.</li>
+            <li>Cut tops off boules and hollow out to create bowls; toast shells cut-side up 2–3 minutes. Ladle hot soup into bowls, top with Gruyère and Parmesan, and bake 5–8 minutes at 500°F until cheese is melted and bubbly. Serve with a small green salad if desired.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://www.somewhereonahill.com/wp-content/uploads/2017/09/french-onion-soup.jpg" alt="French Onion Soup in Bread Bowl"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Roasted Cauliflower & Saffron Pasta with Goat Cheese Dressing</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Winter (Dec–Feb) • Serves: 2 • Inspired by: Blue Apron</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>6–8 oz fregola sarda or small pasta pearls</li>
+            <li>1 medium head cauliflower, cut into steaks or florets</li>
+            <li>4 oz sweet peppers, sliced; 1 small shallot, thinly sliced</li>
+            <li>1 clove garlic, grated; pinch saffron (optional)</li>
+            <li>1 tbsp capers; 1 tbsp sherry vinegar; 2 tbsp spreadable goat cheese</li>
+            <li>2 tbsp sliced roasted almonds; olive oil, salt, pepper</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Preheat oven to 450°F. Toss cauliflower and shallot with 1–2 tsp olive oil, salt and pepper; roast 25–27 minutes until browned and tender.</li>
+            <li>Cook pasta in boiling water with saffron for 7–8 minutes; drain and keep warm.</li>
+            <li>In a skillet heat 1 tsp oil and sauté sliced peppers 3–4 minutes; add capers and sherry vinegar and cook 1–2 minutes.</li>
+            <li>Whisk goat cheese with 2 tsp olive oil, grated garlic and 2 tsp water to make a pourable dressing. Toss pasta with peppers and a drizzle of olive oil, plate and top with roasted cauliflower, spoon dressing and garnish with almonds.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://www.blueapron.com/recipe-images/production/hero/930x620/roasted-cauliflower-and-saffron-pasta.jpg" alt="Roasted Cauliflower Pasta"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Easy Saucy Ramen Noodles with Tofu</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly (partial)</span> Season: Winter (Dec–Feb) • Serves: 2 • Inspired by: TheFoodieTakesFlight</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>2 servings instant ramen cake noodles (discard seasoning)</li>
+            <li>10 oz extra-firm tofu, pressed and cut into ¾" cubes</li>
+            <li>2 cloves garlic, minced; 2 scallions for garnish</li>
+            <li>5 tbsp light soy sauce + 1½ tsp dark soy sauce; 2 tbsp rice vinegar</li>
+            <li>1 tbsp sesame oil; ½–1 tbsp chili garlic sauce; 2 tbsp cornstarch; 1 tbsp sugar; 1 cup water</li>
+            <li>Toasted sesame seeds for finish</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Press tofu to remove excess liquid. Toss tofu cubes with 1 tbsp soy sauce and 1 tbsp cornstarch.</li>
+            <li>Pan-fry tofu in neutral oil over medium heat until crisp and golden on all sides; set aside.</li>
+            <li>Whisk remaining soy sauces, rice vinegar, sesame oil, chili garlic, sugar and 1 cup water. Heat sauce in skillet and simmer 2 minutes to slightly thicken.</li>
+            <li>Cook ramen per package (2–3 minutes), drain and toss with sauce; fold in tofu. Garnish with sliced scallions and sesame seeds and serve immediately.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://thefoodietakesflight.com/wp-content/uploads/2020/03/saucy-ramen.jpg" alt="Saucy Ramen Noodles"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Lemon Ricotta Pasta with Peas & Asparagus</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Spring (Mar–May) • Serves: 2 • Inspired by: multiple lemon-ricotta recipes</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>8 oz pasta (spaghetti or short)</li>
+            <li>¾ cup whole-milk ricotta</li>
+            <li>½ cup fresh peas (or blanched favas)</li>
+            <li>6–8 asparagus spears, trimmed & cut 1–2" pieces</li>
+            <li>1 clove garlic, minced; zest + juice of 1 lemon</li>
+            <li>¼ cup grated Parmesan; salt, pepper, chopped mint or basil</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Cook pasta in salted water until al dente. Add asparagus to the pot in the last 2–3 minutes of cooking; reserve ¾ cup pasta water and drain. Blanch peas 30 seconds in the same water if needed and drain.</li>
+            <li>In the warm pasta pot whisk ricotta with lemon juice, zest, garlic, Parmesan and ¼ cup pasta water to loosen into a silky sauce.</li>
+            <li>Add pasta, asparagus and peas to the ricotta sauce and toss, adding more pasta water until creamy. Season with salt and pepper and garnish with herbs and extra Parmesan.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://maesmenu.com/wp-content/uploads/2021/02/creamy-lemon-ricotta-pasta-83-768x1152.jpg" alt="Lemon Ricotta Pasta"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Grilled Flatbread with Herbed Labneh & Optional Chicken Shawarma</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Summer (Jun–Aug) • Serves: 2 • Inspired by: flatbread & shawarma recipes</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>Homemade dough for 2 small flatbreads (or store-bought flatbreads)</li>
+            <li>½ cup labneh or strained Greek yogurt</li>
+            <li>1 small cucumber, diced; 1 small tomato, diced</li>
+            <li>1 tbsp chopped mint + parsley; 6–8 oz chicken thigh marinated in shawarma spices (optional)</li>
+            <li>Olive oil, lemon juice, salt & pepper</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Mix yogurt with a pinch of salt and 1 tsp lemon juice and fold in chopped herbs to make herbed labneh.</li>
+            <li>Stretch dough thin and grill on a hot skillet or grill 1–2 minutes per side until charred and puffed. If using chicken, grill separately and slice.</li>
+            <li>Spread labneh on flatbreads, top with cucumber, tomato, herbs and optional sliced chicken. Serve warm.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://maldonsalt.com/wp-content/uploads/2021/07/Chicken.png" alt="Grilled Flatbread with Labneh"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Butternut Squash & Sage Baked Orzo</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Fall (Sep–Nov) • Serves: 2 • Inspired by: various recipes</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>1 cup orzo</li>
+            <li>~1 cup roasted butternut squash (½ small squash)</li>
+            <li>1 tbsp butter + 1 tbsp olive oil; 1 small onion, minced; 1 clove garlic</li>
+            <li>¼ cup grated Parmesan or feta; 6–8 fresh sage leaves (some crisped)</li>
+            <li>1 cup vegetable stock (plus more if needed); salt & pepper</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Roast cubed butternut tossed with oil and salt at 425°F for 20–25 minutes until golden. Crisp a few sage leaves in butter and set aside.</li>
+            <li>Sauté onion and garlic in butter+oil until soft. Add orzo and toast 1–2 minutes, add stock and simmer until orzo is al dente, stirring and adding more stock if needed.</li>
+            <li>Stir in roasted squash, chopped sage and Parmesan. Top with crisped sage and serve.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://www.cucinabyelena.com/wp-content/uploads/2024/09/Butternut-Squash-Orzo-Recipe-19-scaled.jpg" alt="Butternut Squash Orzo"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Creamy Tomato Soup with Grilled Cheese Croutons</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Winter (Dec–Feb) • Serves: 2 • Inspired by: Ina Garten / classic soup</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>1 tbsp olive oil; 1 small yellow onion, diced; 2 cloves garlic</li>
+            <li>1 (28 oz) can crushed tomatoes or 2 cups roasted fresh tomatoes</li>
+            <li>2 cups chicken or veg stock; 2 tbsp heavy cream or 2 tbsp milk (optional)</li>
+            <li>Salt, pepper, pinch smoked paprika or saffron (optional)</li>
+            <li>2 slices sourdough bread, buttered and grilled with 2 oz Gruyère or cheddar then cubed</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Sauté onion in oil over medium until soft, 10–12 minutes. Add garlic 1 minute.</li>
+            <li>Add tomatoes and stock and simmer 15–20 minutes to meld flavors.</li>
+            <li>Blend until smooth with an immersion blender or in batches in a blender. Stir in cream if using; adjust seasoning.</li>
+            <li>For grilled cheese croutons: grill buttered bread with cheese until golden, cut into cubes and top the soup before serving.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://inagartencooks.com/wp-content/uploads/2025/05/Barefoot-Contessa-Easy-Tomato-Soup-Grilled-Cheese-Croutons-recipe.jpg" alt="Creamy Tomato Soup with Grilled Cheese Croutons"></div>
+    </article>
+
+    <article class="card" style="margin-top:14px">
+      <h3 class="recipe">Baked Gnocchi with Spinach & Optional Pancetta</h3>
+      <div class="meta"><span class="flag">Farmer’s Market Friendly</span> Season: Winter (Dec–Feb) • Serves: 2 • Inspired by: baked gnocchi recipes</div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Ingredients (buy)</h4>
+          <ul class="ing-list">
+            <li>10–12 oz potato gnocchi (fresh or frozen)</li>
+            <li>1 cup baby spinach; ½ cup marinara or tomato cream sauce</li>
+            <li>½ cup shredded mozzarella; 2 oz pancetta, diced (optional)</li>
+            <li>1 tbsp olive oil; salt & pepper; grated Parmesan to finish</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Instructions</h4>
+          <ol class="instructions">
+            <li>Preheat oven to 375°F. If using pancetta, cook until crisp in a skillet and set aside. Cook gnocchi according to package instructions and drain.</li>
+            <li>Toss gnocchi with sauce, spinach, pancetta and half the mozzarella. Transfer to a small baking dish and top with remaining mozzarella.</li>
+            <li>Bake 12–15 minutes until bubbly and golden. Finish with Parmesan and serve hot.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="img-wrap"><img src="https://yummyaddiction.com/wp-content/uploads/2021/08/baked-gnocchi-spinach-tomatoes.jpg" alt="Baked Gnocchi"></div>
+    </article>
+
+  </section>
+
+  <footer>
+    <p>How to use: Save this file as recipes.html, open in your browser, then File → Print → Save as PDF. Images are linked for use in the printable PDF; if an image is unavailable, replace with your preferred photo. Sources and inspiration links are noted in each recipe block.</p>
+    <p>Want a styled two-column print CSS or a compressed printable booklet layout? I can generate an alternate HTML variant for that layout next.</p>
+  </footer>
+
+</div>
+</body>
+</html>
