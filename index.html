@@ -1,61 +1,61 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Seasonal Recipe Planner — 2 servings</title>
-<style>
-  :root{
-    --accent:#1f6feb;
-    --muted:#666;
-    --page-width:900px;
-    --font-sans: "Segoe UI", Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
-  }
-  body{
-    font-family: var(--font-sans);
-    color:#111;
-    margin:24px;
-    background:#fff;
-  }
-  .container{
-    max-width:var(--page-width);
-    margin:0 auto;
-  }
-  header{
-    text-align:center;
-    margin-bottom:20px;
-  }
-  header h1{margin:0;font-size:28px;}
-  header p{margin:6px 0 0;color:var(--muted);}
-
-  nav{margin:18px 0;padding:8px 12px;border-left:4px solid var(--accent);background:#f8fbff}
-  nav a{display:inline-block;margin-right:12px;color:var(--accent);text-decoration:none;font-weight:600}
-
-  section.season{page-break-inside:avoid;margin-bottom:26px}
-  h2{font-size:20px;margin:18px 0 8px;border-bottom:1px solid #e6e6e6;padding-bottom:6px}
-  h3.recipe{font-size:18px;margin:8px 0}
-  .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
-  .meta strong{color:#222}
-  .row{display:flex;gap:18px;flex-wrap:wrap}
-  .col{flex:1 1 420px;min-width:250px}
-  .card{border:1px solid #eee;padding:12px;border-radius:6px;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,0.02)}
-  ul{margin:8px 0 12px 20px}
-  ol{margin:8px 0 12px 20px}
-  .flag{display:inline-block;padding:4px 8px;border-radius:14px;background:#eef9f3;color:#0a6b2f;font-weight:600;font-size:12px;margin-right:8px}
-  .source{font-size:13px;color:var(--muted);margin-top:6px}
-  .ing-list{margin:6px 0 12px 0;padding-left:12px}
-  .instructions{margin-top:6px}
-  .img-wrap{margin-top:12px;text-align:center}
-  .img-wrap img{max-width:100%;height:auto;border-radius:6px;border:1px solid #ddd}
-  footer{margin-top:32px;padding-top:12px;border-top:1px solid #eee;color:var(--muted);font-size:13px}
-  @media print{
-    nav{display:none}
-    body{margin:8mm}
-    header h1{font-size:22px}
-    .card{border:none;box-shadow:none}
-    .img-wrap img{page-break-inside:avoid;max-height:300px}
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A comprehensive seasonal recipe planner with farmer's market friendly recipes scaled for 2 servings. Features recipes for Spring, Summer, Fall, and Winter seasons in San Francisco.">
+  <meta name="keywords" content="seasonal recipes, farmer's market, recipes for two, meal planning, seasonal cooking">
+  <meta name="author" content="Recipe Planner">
+  <meta name="referrer" content="no-referrer">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Seasonal Recipe Planner — 2 servings">
+  <meta property="og:description" content="Seasonal recipes scaled for two servings, featuring farmer's market friendly ingredients">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  
+  <!-- Chrome specific optimizations -->
+  <meta name="theme-color" content="#1f6feb">
+  <meta name="color-scheme" content="light dark">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍳</text></svg>">
+  
+  <title>Seasonal Recipe Planner — 2 servings</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="script.js" as="script">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- DNS prefetch for external images -->
+  <link rel="dns-prefetch" href="//commons.wikimedia.org">
+  <link rel="dns-prefetch" href="//upload.wikimedia.org">
+  <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
+  <link rel="dns-prefetch" href="//coleycooks.com">
+  <link rel="dns-prefetch" href="//www.tasteofhome.com">
+  <link rel="dns-prefetch" href="//cookieandkate.com">
+  <link rel="dns-prefetch" href="//joanne-eatswellwithothers.com">
+  <link rel="dns-prefetch" href="//fussfreeflavours.com">
+  <link rel="dns-prefetch" href="//thecozycook.com">
+  <link rel="dns-prefetch" href="//thekittchen.com">
+  <link rel="dns-prefetch" href="//theplantbasedschool.com">
+  <link rel="dns-prefetch" href="//www.twopeasandtheirpod.com">
+  <link rel="dns-prefetch" href="//www.themediterraneandish.com">
+  <link rel="dns-prefetch" href="//www.somewhereonahill.com">
+  <link rel="dns-prefetch" href="//www.blueapron.com">
+  <link rel="dns-prefetch" href="//thefoodietakesflight.com">
+  <link rel="dns-prefetch" href="//maesmenu.com">
+  <link rel="dns-prefetch" href="//maldonsalt.com">
+  <link rel="dns-prefetch" href="//www.cucinabyelena.com">
+  <link rel="dns-prefetch" href="//inagartencooks.com">
+  <link rel="dns-prefetch" href="//yummyaddiction.com">
 </head>
 <body>
 <div class="container">
@@ -185,7 +185,7 @@
       </div>
 
       <div class="img-wrap">
-        <img src="https://cookieandkate.com/wp-content/uploads/2015/02/shakshuka-2-1-700x1050.jpg" alt="Shakshuka with Feta">
+        <img loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Shakshuka1.jpg/1200px-Shakshuka1.jpg" alt="Shakshuka with Feta">
       </div>
     </article>
 
@@ -356,7 +356,7 @@
         </div>
       </div>
 
-      <div class="img-wrap"><img src="https://cookieandkate.com/wp-content/uploads/2017/07/black-bean-soup-1.jpg" alt="Black Bean Soup"></div>
+      <div class="img-wrap"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Black Bean Soup"></div>
     </article>
 
     <article class="card" style="margin-top:14px">
@@ -387,7 +387,7 @@
         </div>
       </div>
 
-      <div class="img-wrap"><img src="https://www.blueapron.com/recipe-images/production/hero/930x620/farro-risotto.jpg" alt="Farro Risotto"></div>
+      <div class="img-wrap"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Farro Risotto"></div>
     </article>
 
     <article class="card" style="margin-top:14px">
@@ -416,7 +416,7 @@
         </div>
       </div>
 
-      <div class="img-wrap"><img src="https://theplantbasedschool.com/wp-content/uploads/2020/12/spinach-stew.jpg" alt="Spinach Stew"></div>
+  <div class="img-wrap"><img loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Spinach-Chickpea_Curry_%283117324894%29.jpg/1200px-Spinach-Chickpea_Curry_%283117324894%29.jpg" alt="Spinach Stew with Chickpeas"></div>
     </article>
 
     <article class="card" style="margin-top:14px">
@@ -445,7 +445,7 @@
         </div>
       </div>
 
-      <div class="img-wrap"><img src="https://www.twopeasandtheirpod.com/wp-content/uploads/2016/10/Stuffed-Acorn-Squash-1.jpg" alt="Stuffed Acorn Squash"></div>
+  <div class="img-wrap"><img loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Acorn_squash_stuffed_with_pilaf_and_topped_with_cheese.jpg/1200px-Acorn_squash_stuffed_with_pilaf_and_topped_with_cheese.jpg" alt="Stuffed Acorn Squash"></div>
     </article>
 
   </section>
@@ -483,7 +483,7 @@
         </div>
       </div>
 
-      <div class="img-wrap"><img src="https://www.themediterraneandish.com/wp-content/uploads/2016/01/avgolemono-soup-2.jpg" alt="Avgolemono Soup"></div>
+  <div class="img-wrap"><img loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Avgolemono_-_Sarah_Stierch.jpg/1200px-Avgolemono_-_Sarah_Stierch.jpg" alt="Avgolemono Soup"></div>
     </article>
 
     <article class="card" style="margin-top:14px">
@@ -512,7 +512,7 @@
         </div>
       </div>
 
-      <div class="img-wrap"><img src="https://www.somewhereonahill.com/wp-content/uploads/2017/09/french-onion-soup.jpg" alt="French Onion Soup in Bread Bowl"></div>
+  <div class="img-wrap"><img loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Soupe_%C3%A0_l%27oignon_01.JPG/1200px-Soupe_%C3%A0_l%27oignon_01.JPG" alt="French Onion Soup in Bread Bowl"></div>
     </article>
 
     <article class="card" style="margin-top:14px">
@@ -543,7 +543,7 @@
         </div>
       </div>
 
-      <div class="img-wrap"><img src="https://www.blueapron.com/recipe-images/production/hero/930x620/roasted-cauliflower-and-saffron-pasta.jpg" alt="Roasted Cauliflower Pasta"></div>
+  <div class="img-wrap"><img loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Grilled_Broccoli_%26_Cauliflower_Pasta_%283825172428%29.jpg/1200px-Grilled_Broccoli_%26_Cauliflower_Pasta_%283825172428%29.jpg" alt="Roasted Cauliflower Pasta"></div>
     </article>
 
     <article class="card" style="margin-top:14px">
@@ -574,7 +574,7 @@
         </div>
       </div>
 
-      <div class="img-wrap"><img src="https://thefoodietakesflight.com/wp-content/uploads/2020/03/saucy-ramen.jpg" alt="Saucy Ramen Noodles"></div>
+  <div class="img-wrap"><img loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ramen_4.jpg/1200px-Ramen_4.jpg" alt="Saucy Ramen Noodles"></div>
     </article>
 
     <article class="card" style="margin-top:14px">
@@ -726,10 +726,42 @@
   </section>
 
   <footer>
-    <p>How to use: Save this file as recipes.html, open in your browser, then File → Print → Save as PDF. Images are linked for use in the printable PDF; if an image is unavailable, replace with your preferred photo. Sources and inspiration links are noted in each recipe block.</p>
-    <p>Want a styled two-column print CSS or a compressed printable booklet layout? I can generate an alternate HTML variant for that layout next.</p>
+    <p>How to use: Open this file in your browser to view the responsive recipe collection. Use the search feature to find specific recipes, or navigate by season. The layout is optimized for both desktop and mobile viewing, and includes print-friendly styles for creating PDFs.</p>
+    <p>This responsive design works best in modern browsers like Chrome, with touch-friendly navigation for mobile devices and accessibility features built-in.</p>
   </footer>
 
 </div>
+
+<!-- Grocery List UI -->
+<button id="grocery-fab" class="grocery-fab" aria-haspopup="dialog" aria-controls="grocery-drawer" title="Open grocery list">🛒 Grocery List</button>
+<div id="grocery-overlay" class="drawer-overlay" hidden></div>
+<aside id="grocery-drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="grocery-title" hidden>
+  <div class="drawer-header">
+    <h3 id="grocery-title">Weekly Grocery List</h3>
+    <button type="button" class="drawer-close" aria-label="Close grocery list">✕</button>
+  </div>
+  <div class="drawer-body">
+    <div class="drawer-meta">
+      <span id="selected-recipes-count">0 recipes selected</span>
+      <div id="selected-recipes-tags" class="recipe-tags" aria-live="polite"></div>
+    </div>
+    <ul id="grocery-items" class="grocery-items" aria-label="Grocery items list"></ul>
+    <div class="empty-state" id="grocery-empty" aria-live="polite">Select recipes to build your list.</div>
+  </div>
+  <div class="drawer-actions">
+    <button type="button" id="grocery-copy" class="btn">Copy</button>
+    <button type="button" id="grocery-share" class="btn">Share</button>
+    <button type="button" id="grocery-sms" class="btn">Text (SMS)</button>
+    <button type="button" id="grocery-download" class="btn">Download</button>
+  </div>
+  <div class="drawer-footer" id="grocery-feedback" aria-live="polite"></div>
+  
+</aside>
+
+<!-- JavaScript for enhanced functionality -->
+<script src="script.js"></script>
+
+<!-- Optional: Analytics or other tracking scripts would go here -->
+
 </body>
 </html>

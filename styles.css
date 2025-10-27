@@ -1,0 +1,753 @@
+/* =============================================================================
+   Seasonal Recipe Planner Styles
+   - Chrome optimized
+   - Mobile responsive design
+   - Touch-friendly interface
+   ============================================================================= */
+
+/* CSS Custom Properties (CSS Variables) */
+:root {
+  --accent: #1f6feb;
+  --accent-hover: #0969da;
+  --muted: #666;
+  --text-primary: #111;
+  --text-light: #222;
+  --page-width: 900px;
+  --border-light: #eee;
+  --border-medium: #e6e6e6;
+  --border-dark: #ddd;
+  --bg-white: #fff;
+  --bg-light: #f8fbff;
+  --bg-flag: #eef9f3;
+  --color-flag: #0a6b2f;
+  --shadow-light: 0 1px 0 rgba(0,0,0,0.02);
+  --shadow-card: 0 2px 4px rgba(0,0,0,0.1);
+  --border-radius: 6px;
+  --border-radius-small: 4px;
+  --border-radius-large: 14px;
+  
+  /* Typography */
+  --font-sans: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-small: 13px;
+  --font-size-xs: 12px;
+  --line-height-base: 1.5;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 18px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  margin: var(--spacing-xl);
+  background: var(--bg-white);
+  line-height: var(--line-height-base);
+}
+
+/* Container and Layout */
+.container {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+  border-bottom: 1px solid var(--border-medium);
+  padding-bottom: var(--spacing-xs);
+}
+
+h3.recipe {
+  font-size: 1.25rem;
+  margin: var(--spacing-sm) 0;
+  color: var(--text-primary);
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin: var(--spacing-md) 0 var(--spacing-sm);
+  color: var(--text-light);
+}
+
+p {
+  margin: var(--spacing-xs) 0 0;
+  line-height: var(--line-height-base);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-xl) 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header p {
+  margin: var(--spacing-xs) 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation */
+nav {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-left: 4px solid var(--accent);
+  background: var(--bg-light);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-small);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-height: 44px; /* Touch-friendly minimum */
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--accent);
+  color: var(--bg-white);
+  outline: none;
+}
+
+nav a:active {
+  transform: translateY(1px);
+}
+
+/* Sections */
+section.season {
+  page-break-inside: avoid;
+  margin-bottom: var(--spacing-xl);  
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border-light);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  background: var(--bg-white);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--spacing-lg);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Meta Information */
+.meta {
+  font-size: var(--font-size-small);
+  color: var(--muted);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.meta strong {
+  color: var(--text-light);
+}
+
+/* Flags */
+.flag {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-large);
+  background: var(--bg-flag);
+  color: var(--color-flag);
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  margin-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Grid Layout */
+.row {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-md);
+}
+
+.col {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+/* Lists */
+ul, ol {
+  margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-xl);
+  padding-left: 0;
+}
+
+.ing-list {
+  margin: var(--spacing-xs) 0 var(--spacing-md) 0;
+  padding-left: var(--spacing-md);
+}
+
+.instructions {
+  margin-top: var(--spacing-xs);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.4;
+}
+
+/* Images */
+.img-wrap {
+  margin-top: var(--spacing-md);
+  text-align: center;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.img-wrap img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-dark);
+  transition: transform 0.2s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.02);
+}
+
+/* Source Links */
+.source {
+  font-size: var(--font-size-small);
+  color: var(--muted);
+  margin-top: var(--spacing-xs);
+}
+
+/* Footer */
+footer {
+  margin-top: var(--spacing-xxl);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-light);
+  color: var(--muted);
+  font-size: var(--font-size-small);
+  line-height: 1.5;
+}
+
+/* =========================
+   Grocery List UI
+   ========================= */
+.grocery-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  z-index: 1100;
+}
+
+.grocery-fab:focus { outline: 3px solid #fff; box-shadow: 0 0 0 4px var(--accent-hover), 0 6px 18px rgba(0,0,0,0.2); }
+.grocery-fab:hover { background: var(--accent-hover); }
+
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1090;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.drawer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-white);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 -8px 24px rgba(0,0,0,0.25);
+  transform: translateY(100%);
+  transition: transform 0.25s ease;
+  z-index: 1101;
+  max-height: 78vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer.open { transform: translateY(0); }
+.drawer-overlay.open { opacity: 1; }
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.drawer-header h3 {
+  margin: 0;
+}
+
+.drawer-close {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.drawer-body {
+  padding: 8px 16px 12px;
+  overflow: auto;
+}
+
+.drawer-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font-size: var(--font-size-small);
+  margin-bottom: 8px;
+}
+
+.recipe-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.recipe-tags .tag {
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
+  color: var(--text-light);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.grocery-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grocery-items li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.grocery-items input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.grocery-items li.purchased .text { text-decoration: line-through; color: var(--muted); }
+
+.empty-state { color: var(--muted); text-align: center; padding: 24px 0; }
+
+.drawer-actions {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px 14px;
+  border-top: 1px solid var(--border-light);
+}
+
+.drawer-actions .btn {
+  background: var(--bg-light);
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.drawer-actions .btn:hover { background: #eaf2ff; border-color: var(--accent); }
+.drawer-footer { padding: 0 16px 12px; color: var(--muted); font-size: 12px; }
+
+/* Selection toggle in cards */
+.select-recipe-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+}
+
+.select-recipe-wrap input[type="checkbox"] { width: 16px; height: 16px; }
+.select-recipe-wrap label { font-size: 12px; color: var(--text-light); cursor: pointer; }
+
+/* Accessibility Improvements */
+:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Loading States */
+img {
+  background: var(--border-light);
+}
+
+/* =============================================================================
+   MOBILE RESPONSIVE DESIGN
+   ============================================================================= */
+
+/* Mobile First - Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  :root {
+    --font-size-base: 14px;
+  }
+  
+  body {
+    margin: var(--spacing-md);
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  header {
+    padding: var(--spacing-md) 0;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  
+  header p {
+    font-size: 0.9rem;
+    margin-top: var(--spacing-sm);
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+  }
+  
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-md);
+    font-size: 1rem;
+    min-height: 48px;
+  }
+  
+  .row {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .col {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+  
+  .card {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  h3.recipe {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+  
+  ul, ol {
+    margin-left: var(--spacing-lg);
+  }
+  
+  .ing-list {
+    font-size: 0.9rem;
+  }
+  
+  .instructions {
+    font-size: 0.9rem;
+  }
+  
+  .flag {
+    font-size: 0.75rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+  
+  .img-wrap {
+    margin-top: var(--spacing-sm);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    margin: var(--spacing-lg);
+  }
+  
+  header h1 {
+    font-size: 1.75rem;
+  }
+  
+  nav {
+    justify-content: center;
+  }
+  
+  nav a {
+    min-height: 44px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+  
+  .row {
+    gap: var(--spacing-lg);
+  }
+  
+  .col {
+    flex: 1 1 350px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+  }
+  
+  nav {
+    justify-content: flex-start;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: var(--page-width);
+  }
+  
+  .row {
+    align-items: flex-start;
+  }
+  
+  .col {
+    flex: 1 1 420px;
+  }
+}
+
+/* =============================================================================
+   TOUCH AND MOBILE INTERACTION IMPROVEMENTS
+   ============================================================================= */
+
+/* Touch-friendly sizing */
+@media (pointer: coarse) {
+  nav a {
+    min-height: 48px;
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  .card {
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .img-wrap img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #e6e6e6;
+    --text-light: #cccccc;
+    --muted: #999;
+    --bg-white: #1a1a1a;
+    --bg-light: #2a2a2a;
+    --border-light: #333;
+    --border-medium: #444;
+    --border-dark: #555;
+    --shadow-card: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  body {
+    background: var(--bg-white);
+    color: var(--text-primary);
+  }
+  
+  .card {
+    background: var(--bg-white);
+    border-color: var(--border-light);
+  }
+  
+  .img-wrap img {
+    border-color: var(--border-dark);
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =============================================================================
+   PRINT STYLES
+   ============================================================================= */
+
+@media print {
+  nav {
+    display: none;
+  }
+  
+  body {
+    margin: 8mm;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  header h1 {
+    font-size: 18pt;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: none;
+    page-break-inside: avoid;
+    margin-bottom: 12pt;
+  }
+  
+  .img-wrap img {
+    page-break-inside: avoid;
+    max-height: 300px;
+    max-width: 100%;
+  }
+  
+  h2 {
+    page-break-after: avoid;
+  }
+  
+  .row {
+    display: block;
+  }
+  
+  .col {
+    width: 100%;
+    margin-bottom: 6pt;
+  }
+  
+  /* Ensure proper page breaks */
+  section.season {
+    page-break-before: auto;
+    page-break-after: auto;
+    page-break-inside: avoid;
+  }
+  
+  article.card {
+    page-break-before: avoid;
+    page-break-after: auto;
+    page-break-inside: avoid;
+  }
+  
+  /* Hide interactive elements in print */
+  nav a:after {
+    content: none;
+  }
+}
+
+/* =============================================================================
+   CHROME SPECIFIC OPTIMIZATIONS
+   ============================================================================= */
+
+/* Chrome font rendering optimization */
+@supports (-webkit-font-smoothing: antialiased) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Chrome scroll optimization */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Chrome flexbox fixes */
+@supports (display: flex) {
+  .row {
+    display: flex;
+  }
+  
+  nav {
+    display: flex;
+  }
+}
